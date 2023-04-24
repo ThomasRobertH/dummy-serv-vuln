@@ -5,6 +5,7 @@
  <body>
  <?php
   $preamble ="grep -E".$_GET['pattern'];
+  $preamble="grep 'bob' "; 
 exec($preamble. "contentFile", $output);
 echo "&ltpre>";
 echo "Result from query on messages\n";
